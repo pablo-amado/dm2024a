@@ -13,7 +13,7 @@ envg <- env()
 
 envg$EXPENV <- list()
 envg$EXPENV$bucket_dir <- "~/buckets/b1"
-envg$EXPENV$exp_dir <- "~/buckets/b1/expw/"
+envg$EXPENV$exp_dir <- "~/buckets/b1/exp_corridaOB1/"
 envg$EXPENV$wf_dir <- "~/buckets/b1/flow/"
 envg$EXPENV$repo_dir <- "~/dm2024a/"
 envg$EXPENV$datasets_dir <- "~/buckets/b1/datasets/"
@@ -175,10 +175,10 @@ FErf_attributes_base <- function( pinputexps, ratio, desvio)
   # parametros para que LightGBM se comporte como Random Forest
   param_local$lgb_param <- list(
     # parametros que se pueden cambiar
-    num_iterations = 20,
-    num_leaves  = 16,
-    min_data_in_leaf = 1000,
-    feature_fraction_bynode  = 0.2,
+    num_iterations = 28,
+    num_leaves  = 50,
+    min_data_in_leaf = 37,
+    feature_fraction_bynode  = 0.476247,
 
     # para que LightGBM emule Random Forest
     boosting = "rf",
